@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# HAM10000 files must not be redistributed.
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated files.
+outputs/*
+!outputs/.gitkeep
+splits/*.csv
