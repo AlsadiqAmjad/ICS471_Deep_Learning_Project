@@ -1,0 +1,34 @@
+Milestone 2: Data Pipeline and MLP Networks
+
+Develop a complete data pipeline using PyTorch and implement a shallow MLP with two hidden layers and a deeper MLP with five hidden layers. Use reusable methods or modules.
+
+1. Data Pipeline — 25 points
+- Load the dataset and display at least one sample from each class.
+- Perform reshaping, normalization, label encoding, and conversion to PyTorch tensors.
+- Split into training (80%) and testing (20%) when predefined splits are unavailable.
+- Split the training portion into training (80%) and validation (20%).
+- Stratify classification splits.
+- Create PyTorch DataLoader objects.
+- Fit preprocessing parameters using only training data.
+
+2. MLP Implementation — 12 points
+- Create a flexible method or class for a two-hidden-layer MLP.
+- Choose and justify hidden widths and activation functions.
+- Use an appropriate output layer.
+
+3. Required Experiments — 53 points
+- Use three appropriate loss functions.
+- Report regularization strength.
+- Use SGD with momentum, RMSprop, and Adam.
+- Perform the complete 3 × 3 loss–optimizer comparison with the shallow MLP.
+- Select the best pair using validation performance.
+- Evaluate four learning rates using the selected pair.
+- Train the five-hidden-layer MLP using the optimal settings.
+- Compare the shallow and deeper networks on the test set.
+
+4. Required Plots — 10 points
+- Training and validation loss versus epoch for both optimal networks.
+- Training and validation performance versus epoch for both optimal networks.
+
+Deliverable
+- A fully executed, runnable Jupyter notebook with all outputs visible. The grader will not run the notebook.

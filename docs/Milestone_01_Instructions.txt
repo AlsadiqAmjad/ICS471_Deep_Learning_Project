@@ -1,0 +1,20 @@
+Milestone 1: Project Proposal and Experimental Plan
+
+Required work
+1. Define a real problem, the input and output of the system, and why the problem matters. State whether the task is classification, regression, sequence prediction, generation, or another well-defined task.
+
+2. Identify a dataset and inspect actual samples. Describe its size, labels or targets, class balance, and licensing or access conditions.
+
+3. Specify the planned train/validation/test split before model training. 
+
+4. Identify a single validation metric to evaluate your model later.
+
+Required plots and tables
+- Representative data samples or a sample visualization appropriate to the modality.
+
+- A distribution plot, such as class frequencies, target values, sequence lengths, or image dimensions.
+
+Deliverables
+- A 2-3-page PDF proposal with title, team members, and requirements mentioned above 
+
+- A GitHub repository link or archive containing the proposal-supporting code and a README.

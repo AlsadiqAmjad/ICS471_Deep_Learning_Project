@@ -1,0 +1,5 @@
+loss,optimizer,learning_rate,best_epoch,validation_loss,validation_accuracy,validation_macro_f1,elapsed_seconds,checkpoint
+cross_entropy,adam,0.0001,19,1.1159117720086948,0.5683094198378041,0.3829568135364619,34.102728329000456,results/milestone_02/checkpoints/shallow_lr_1em04.pt
+cross_entropy,adam,0.0003,9,1.2311256259809935,0.5034310667498441,0.3461003237243527,23.32463262100009,results/milestone_02/checkpoints/shallow_lr_3em04.pt
+cross_entropy,adam,0.001,19,1.0724918362652593,0.5976294447910169,0.389204816646132,33.635592695000014,results/milestone_02/checkpoints/shallow_lr_1em03.pt
+cross_entropy,adam,0.003,10,1.1775999137630926,0.5651902682470368,0.36387590136780645,25.267148451999674,results/milestone_02/checkpoints/shallow_lr_3em03.pt
