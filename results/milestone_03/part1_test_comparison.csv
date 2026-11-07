@@ -1,0 +1,3 @@
+model,input,trainable_parameters,test_loss,test_accuracy,test_macro_f1
+Milestone 2 Shallow MLP,64 x 64,6359815,1.042389643114921,0.5861208187718422,0.3889796224727449
+"CNN from scratch (S5, early stopping on train_accuracy)",128 x 128,4753863,0.990178148388208,0.582126809785322,0.45372842628939125

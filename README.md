@@ -63,8 +63,33 @@ The requirements for each milestone are stored in `docs/`:
 
 - [Milestone 1 instructions](docs/Milestone_01_Instructions.txt)
 - [Milestone 2 instructions](docs/Milestone_02_Instructions.txt)
+- [Milestone 3 instructions](docs/Milestone_03_Instructions.txt)
 
 Each milestone's code, outputs, and report material should be interpreted according to its corresponding instruction file.
+
+## Milestone 3: CNNs and transfer learning
+
+- **Notebook:** [`notebooks/ICS471_Milestone_03.ipynb`](notebooks/ICS471_Milestone_03.ipynb) (fully executed).
+- **Code:** [`src/milestone3/`](src/milestone3/) reuses the Milestone 2 data pipeline and split, and adds:
+  - a configurable CNN (`models.py`);
+  - training-only augmentation and persistent image caches (`data.py`);
+  - training with a selectable early-stopping monitor (`training.py`);
+  - pretrained VGG19, ResNet-50, and MobileNetV3 models with three freezing strategies, plus feature extraction (`transfer.py`);
+  - model summaries and the architecture diagram (`summary.py`).
+- **Results:** `results/milestone_03/` contains:
+  - result tables (CSV) and figures;
+  - per-run epoch logs (`*/logs/`) and JSON summaries (`*/summaries/`);
+  - the selected from-scratch CNN checkpoint `part1_cnn/checkpoints/cnn_best.pt`.
+  
+  Other checkpoints, including the large pretrained models, are kept local and not committed.
+- **Image caches:** resized images are cached once under `data/processed/` (not committed).
+- **Pretrained weights:** downloaded automatically by `torchvision` on first use.
+
+Run the tests with:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests
+```
 
 ## Reproducibility rules
 

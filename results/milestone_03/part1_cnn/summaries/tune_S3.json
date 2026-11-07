@@ -1,0 +1,33 @@
+{
+  "name": "tune_S3",
+  "learning_rate": 0.001,
+  "dropout": 0.5,
+  "base_filters": 32,
+  "image_size": 128,
+  "max_epochs": 40,
+  "patience": 10,
+  "loss": "cross_entropy",
+  "optimizer": "adam",
+  "weight_decay": 0.0001,
+  "mean": [
+    0.7627829313278198,
+    0.5452696084976196,
+    0.5697802305221558
+  ],
+  "std": [
+    0.1407640427350998,
+    0.15268930792808533,
+    0.1694590002298355
+  ],
+  "monitor": "validation_macro_f1",
+  "best_epoch": 37,
+  "stopped_epoch": 40,
+  "best_monitor_value": 0.37244988722251,
+  "train_loss": 1.2429730272977582,
+  "train_accuracy": 0.5183335933843033,
+  "validation_loss": 1.1811759158067234,
+  "validation_accuracy": 0.5171553337492202,
+  "validation_macro_f1": 0.37244988722251,
+  "elapsed_seconds": 150.67127380700003,
+  "trainable_parameters": 1207015
+}

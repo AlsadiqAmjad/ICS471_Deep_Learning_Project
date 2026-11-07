@@ -1,0 +1,25 @@
+{
+  "name": "mobilenet_v3_large_head",
+  "backbone": "mobilenet_v3_large",
+  "strategy": "head",
+  "learning_rate": 0.001,
+  "image_size": 224,
+  "max_epochs": 12,
+  "patience": 4,
+  "trainable_layers": [
+    "classifier.3"
+  ],
+  "total_parameters": 4210999,
+  "trainable_parameters": 8967,
+  "frozen_parameters": 4202032,
+  "monitor": "validation_macro_f1",
+  "best_epoch": 9,
+  "stopped_epoch": 12,
+  "best_monitor_value": 0.46137160567726976,
+  "train_loss": 0.8824057169276033,
+  "train_accuracy": 0.6657824933687002,
+  "validation_loss": 0.9536420678765195,
+  "validation_accuracy": 0.6425452276980661,
+  "validation_macro_f1": 0.46137160567726976,
+  "elapsed_seconds": 94.94119969799976
+}

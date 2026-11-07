@@ -1,0 +1,33 @@
+{
+  "name": "tune_S4",
+  "learning_rate": 0.001,
+  "dropout": 0.3,
+  "base_filters": 64,
+  "image_size": 128,
+  "max_epochs": 40,
+  "patience": 10,
+  "loss": "cross_entropy",
+  "optimizer": "adam",
+  "weight_decay": 0.0001,
+  "mean": [
+    0.7627829313278198,
+    0.5452696084976196,
+    0.5697802305221558
+  ],
+  "std": [
+    0.1407640427350998,
+    0.15268930792808533,
+    0.1694590002298355
+  ],
+  "monitor": "validation_macro_f1",
+  "best_epoch": 37,
+  "stopped_epoch": 40,
+  "best_monitor_value": 0.37897266510524613,
+  "train_loss": 1.1903933167066973,
+  "train_accuracy": 0.5503198626930879,
+  "validation_loss": 1.2460033063656526,
+  "validation_accuracy": 0.5258889582033687,
+  "validation_macro_f1": 0.37897266510524613,
+  "elapsed_seconds": 305.4004874500001,
+  "trainable_parameters": 4753863
+}

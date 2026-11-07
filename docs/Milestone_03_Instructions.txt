@@ -1,0 +1,21 @@
+Milestone 3: CNN Development and Transfer Learning
+
+In this milestone of the project, you will implement and fine-tune different CNN models with different configurations. You will develop and train a CNN from scratch, use transfer learning, and fine-tune pretrained models.
+
+Keep the previous data split used in the previous milestone. Apply augmentation only during training. Select hyperparameters and checkpoints using validation results; evaluate on the test set after all choices are fixed.
+
+Part 1: CNN trained from scratch (50 marks)
+Preprocess the inputs: Select appropriate preprocessing technique for your data. For example, image mean subtraction, etc. [4 marks]
+Data Augmentation: Apply at least two dataset-appropriate, label-preserving augmentations. Apply it to all training data. Show five original samples, each with two augmented versions. [6 marks]
+CNN Model: Build a CNN model (results of this model should be better than MLP used in the previous milestone). The model should have at least four convolutional layers with activation functions, suitable downsampling, and a classifier head. Draw the architecture with output shapes and number of trainable parameters. [15 marks]
+Hyperparameter Tuning: Train at least three hyperparameter settings. Vary at least two hyperparameters across the search, such as learning rate, dropout probability, or number of filters. Record each setting and its best validation score. [10 marks]
+Early Stopping Technique: Using the CNN model (step 3) and the best hyperparameters selected in step 4, use the early stopping technique to train the model. Compare the model performance on the validation set using the early stopping technique with training accuracy, validation accuracy, and validation loss. Select the best one and evaluate it on the test dataset. [10 marks]
+Model saving: Save logs and the checkpoint selected by the validation metric through early stopping technique [5 marks]
+
+
+Part 2: Transfer learning [50 marks]
+Load three pretrained CNN models, such as VGG19, ResNet, and MobileNet. Replace the prediction head (classifier) with one matching your task. Evaluate these models on the test set by training only the classification layer. [10 marks]
+Freeze all backbone parameters of these pretrained models and train only the last 3 layers. Make sure to select the correct learning rate [10 marks]
+Add more layers (can be convolution layers or FC or dropout, etc) to the pretrained models and train these layers on your task (other pretrained model layers should be frozen).  [10 marks]
+Save the best-performing model in the previous steps to be used for the next part
+Use the best-performing model saved in the previous steps to be used as a feature extractor. The extractor features can be fed into any machine learning models, such as SVM, Random Forest...etc. [20 marks]

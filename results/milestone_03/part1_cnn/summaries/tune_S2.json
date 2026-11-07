@@ -1,0 +1,33 @@
+{
+  "name": "tune_S2",
+  "learning_rate": 0.0003,
+  "dropout": 0.3,
+  "base_filters": 32,
+  "image_size": 128,
+  "max_epochs": 40,
+  "patience": 10,
+  "loss": "cross_entropy",
+  "optimizer": "adam",
+  "weight_decay": 0.0001,
+  "mean": [
+    0.7627829313278198,
+    0.5452696084976196,
+    0.5697802305221558
+  ],
+  "std": [
+    0.1407640427350998,
+    0.15268930792808533,
+    0.1694590002298355
+  ],
+  "monitor": "validation_macro_f1",
+  "best_epoch": 36,
+  "stopped_epoch": 40,
+  "best_monitor_value": 0.4520277659196489,
+  "train_loss": 1.0387053075456494,
+  "train_accuracy": 0.5957247620533624,
+  "validation_loss": 1.0033752146320498,
+  "validation_accuracy": 0.585776668746101,
+  "validation_macro_f1": 0.4520277659196489,
+  "elapsed_seconds": 149.9475520039996,
+  "trainable_parameters": 1207015
+}

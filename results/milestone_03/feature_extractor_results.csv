@@ -1,0 +1,5 @@
+classifier,selected_params,validation_macro_f1,test_accuracy,test_macro_f1
+End-to-end network (mobilenet_v3_large_last3_lr1em03),-,0.6101034698737732,0.7024463305042437,0.5639548991817137
+SVM (RBF) on extracted features,"{""C"": 1.0}",0.633638072178399,0.7553669495756365,0.598713926812945
+Random forest on extracted features,"{""max_depth"": null, ""min_samples_leaf"": 5}",0.6408652818980299,0.7778332501248127,0.5771162691349147
+Logistic regression on extracted features,"{""C"": 0.01}",0.6303994973124253,0.7608587119321019,0.5996223184070598

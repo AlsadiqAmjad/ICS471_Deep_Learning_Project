@@ -1,0 +1,33 @@
+{
+  "name": "es_validation_accuracy",
+  "learning_rate": 0.0003,
+  "dropout": 0.5,
+  "base_filters": 64,
+  "image_size": 128,
+  "max_epochs": 60,
+  "patience": 10,
+  "loss": "cross_entropy",
+  "optimizer": "adam",
+  "weight_decay": 0.0001,
+  "mean": [
+    0.7627829313278198,
+    0.5452696084976196,
+    0.5697802305221558
+  ],
+  "std": [
+    0.1407640427350998,
+    0.15268930792808533,
+    0.1694590002298355
+  ],
+  "monitor": "validation_accuracy",
+  "best_epoch": 25,
+  "stopped_epoch": 35,
+  "best_monitor_value": 0.5720524017467249,
+  "train_loss": 1.2197614361090712,
+  "train_accuracy": 0.5422062724293961,
+  "validation_loss": 1.0303312103523734,
+  "validation_accuracy": 0.5720524017467249,
+  "validation_macro_f1": 0.4265999495512577,
+  "elapsed_seconds": 267.90493993599966,
+  "trainable_parameters": 4753863
+}

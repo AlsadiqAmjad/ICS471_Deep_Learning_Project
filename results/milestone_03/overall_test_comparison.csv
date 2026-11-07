@@ -1,0 +1,7 @@
+approach,test_accuracy,test_macro_f1
+"MLP (Shallow MLP, Milestone 2)",0.5861208187718422,0.3889796224727449
+CNN from scratch,0.582126809785322,0.45372842628939125
+Transfer: classifier only (MobileNetV3-Large),0.6525212181727409,0.4565110485456398
+Transfer: last 3 layers (MobileNetV3-Large),0.7024463305042437,0.5639548991817137
+Transfer: added layers (MobileNetV3-Large),0.5731402895656516,0.42550281819183283
+Random forest on MobileNetV3-Large features,0.7778332501248127,0.5771162691349147

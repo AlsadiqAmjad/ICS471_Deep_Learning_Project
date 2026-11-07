@@ -1,0 +1,27 @@
+{
+  "name": "mobilenet_v3_large_last3_lr1em03",
+  "backbone": "mobilenet_v3_large",
+  "strategy": "last3",
+  "learning_rate": 0.001,
+  "image_size": 224,
+  "max_epochs": 12,
+  "patience": 4,
+  "trainable_layers": [
+    "features.16.0",
+    "classifier.0",
+    "classifier.3"
+  ],
+  "total_parameters": 4210999,
+  "trainable_parameters": 1392647,
+  "frozen_parameters": 2818352,
+  "monitor": "validation_macro_f1",
+  "best_epoch": 8,
+  "stopped_epoch": 12,
+  "best_monitor_value": 0.6101034698737732,
+  "train_loss": 0.3596508162900315,
+  "train_accuracy": 0.8037135278514589,
+  "validation_loss": 0.8097258586847849,
+  "validation_accuracy": 0.7211478477854024,
+  "validation_macro_f1": 0.6101034698737732,
+  "elapsed_seconds": 99.42043723000006
+}

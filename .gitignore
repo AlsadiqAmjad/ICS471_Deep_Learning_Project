@@ -16,3 +16,7 @@ data/processed/
 # Large model checkpoints remain local.
 results/milestone_02/checkpoints/*
 !results/milestone_02/checkpoints/.gitkeep
+
+# Milestone 3: keep only the selected from-scratch CNN checkpoint (~18 MB).
+# Tuning runs and pretrained-model checkpoints (up to ~550 MB each) stay local.
+!results/milestone_03/part1_cnn/checkpoints/cnn_best.pt

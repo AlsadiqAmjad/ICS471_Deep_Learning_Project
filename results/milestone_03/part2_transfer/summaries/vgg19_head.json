@@ -1,0 +1,25 @@
+{
+  "name": "vgg19_head",
+  "backbone": "vgg19",
+  "strategy": "head",
+  "learning_rate": 0.001,
+  "image_size": 224,
+  "max_epochs": 12,
+  "patience": 4,
+  "trainable_layers": [
+    "classifier.6"
+  ],
+  "total_parameters": 139598919,
+  "trainable_parameters": 28679,
+  "frozen_parameters": 139570240,
+  "monitor": "validation_macro_f1",
+  "best_epoch": 6,
+  "stopped_epoch": 10,
+  "best_monitor_value": 0.29263507997821947,
+  "train_loss": 1.4349350892059665,
+  "train_accuracy": 0.4702761741301295,
+  "validation_loss": 1.3729447968959512,
+  "validation_accuracy": 0.4778540237055521,
+  "validation_macro_f1": 0.29263507997821947,
+  "elapsed_seconds": 131.89480630900016
+}

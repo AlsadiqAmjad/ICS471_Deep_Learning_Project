@@ -1,0 +1,25 @@
+{
+  "name": "resnet50_head",
+  "backbone": "resnet50",
+  "strategy": "head",
+  "learning_rate": 0.001,
+  "image_size": 224,
+  "max_epochs": 12,
+  "patience": 4,
+  "trainable_layers": [
+    "fc"
+  ],
+  "total_parameters": 23522375,
+  "trainable_parameters": 14343,
+  "frozen_parameters": 23508032,
+  "monitor": "validation_macro_f1",
+  "best_epoch": 9,
+  "stopped_epoch": 12,
+  "best_monitor_value": 0.44198948806965516,
+  "train_loss": 0.9037189997475723,
+  "train_accuracy": 0.6843501326259946,
+  "validation_loss": 0.9786613137738376,
+  "validation_accuracy": 0.6587648159700561,
+  "validation_macro_f1": 0.44198948806965516,
+  "elapsed_seconds": 104.90230417099974
+}
